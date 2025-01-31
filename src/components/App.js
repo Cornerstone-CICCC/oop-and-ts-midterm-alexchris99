@@ -14,6 +14,7 @@ export class App extends Component {
       <div>
         <main>
           <div class="container">
+            <div class="modal"></div>
             <div class="item-list"></div>
             <div class="cart-list">
             </div>

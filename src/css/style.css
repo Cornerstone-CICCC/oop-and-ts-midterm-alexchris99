@@ -132,6 +132,79 @@ img{
     margin: 0
 }
 
+/*modal*/
+.modal {
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgb(0, 0, 0);
+    background-color: rgba(0, 0, 0, 0.4);
+    animation: fadein 0.5s linear;
+    -webkit-animation: fadein 0.5s linear;
+    /* The Close Button */
+}
+.modal.fadeout {
+    animation: fadeout 0.5s linear;
+    -webkit-animation: fadeout 0.5s linear;
+}
+.modal .modal-content {
+    background-color: #fefefe;
+    margin: 15em auto 2em auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 90%;
+    border-radius: 20px;
+    -webkit-border-radius: 2;
+    -moz-border-radius: 2;
+    -ms-border-radius: 2;
+    -o-border-radius: 2;
+}
+.modal .close {
+    text-align: center;
+    width: 10%;
+    margin-left: auto;
+}
+.modal div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.modal div .modal-title {
+    padding-top: 10px;
+    text-align: center;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+.modal div .item-image {
+    margin: 0 auto;
+    padding: 1em 0;
+    max-width: 100%;
+    width: auto;
+}
+.modal div .modal-description p{
+    text-align: center;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    margin: 0 1em 1em 1em;
+    font-size: 1em;
+}
+.modal .close {
+    margin-top: -0.5em;
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+    background-color: white;
+    height: 1.2em;
+}
+.modal .close:hover, .modal .close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+
 @media (min-width: 1200px) {
     .container{
         display: grid;
