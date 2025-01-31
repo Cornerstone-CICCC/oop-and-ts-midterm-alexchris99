@@ -1,6 +1,7 @@
 import { App } from "./components/App.js";
 import { CartContext } from "./contexts/CartContext.js";
 
+
 // assing the element to the var
 const root = document.querySelector('#app')
 

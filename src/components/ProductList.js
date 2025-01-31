@@ -23,6 +23,7 @@ export class ProductList extends Component {
   // render the componet
   render() {
     const productList = document.createElement("div")
+    productList.id = "list"
     productList.className  = "product-list"
 
     //loop the array of products

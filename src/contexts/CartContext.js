@@ -55,14 +55,10 @@ export class CartContext {
     restProduct(id){
         this.cart = this.cart.map(product => {
             if(id === product.id){
-                if(product.quantity > 1){
-                    return{
-                        ...product,
-                        quantity: product.quantity-=1,
-                        total: product.price*product.quantity
-                    }
-                }else{
-                    return product
+                return{
+                    ...product,
+                    quantity: product.quantity-=1,
+                    total: product.price*product.quantity
                 }
             }else{
                 return product
@@ -73,9 +69,11 @@ export class CartContext {
 
     // manage the remove from the
     removeProduct(id){
-        this.cart = this.cart.filter(product => product.id !== id)
-        this.notifyListeners()
-        return this.cart
+        setTimeout(()=>{
+            this.cart = this.cart.filter(product => product.id !== id)
+            this.notifyListeners()
+            return this.cart
+        },1000)
     }
 
     // create the array of functions that are waiting for a changue

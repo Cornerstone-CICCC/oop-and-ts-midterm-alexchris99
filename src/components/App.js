@@ -13,7 +13,7 @@ export class App extends Component {
       <header class="header"></header>
       <div>
         <main>
-          <div class="main-container">
+          <div class="container">
             <div class="item-list"></div>
             <div class="cart-list">
             </div>
