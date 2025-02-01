@@ -34,7 +34,7 @@ img{
     text-align: center;
     width: 100%;
     height: auto;
-    border: 1px solid black;
+    background-color: ghostwhite;
 }
 
 .title{
@@ -116,6 +116,11 @@ img{
 .cart-item img{
     max-width: 15%;
     width: auto;
+    
+}
+
+.cart-item img:hover{
+    cursor: pointer;
 }
 
 /*footer*/
@@ -227,5 +232,12 @@ img{
     .cart-list-container{
         width: 15em;
         margin: 0 auto;
+    }
+    .image-product:hover{
+        cursor: pointer;
+    }
+    .modal .modal-content{
+        max-width: 40em;
+        width: auto;
     }
 }

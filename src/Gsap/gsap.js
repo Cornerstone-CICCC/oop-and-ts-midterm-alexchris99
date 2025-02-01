@@ -39,16 +39,14 @@ function modal(title,description,image){
     <div class="modal-content"> 
         <span class="close">&times</span>
             <div>
-                <h3 class = "modal-title">${title}</h3>
+                <h3 class="modal-title">${title}</h3>
                 <img class="item-image" src="${image}">
-                <div class = "modal-description">
+                <div class="modal-description">
                     <p>${description}</p>
                 </div>
             </div>
     </div>
     `
-    console.log(modal)
-    // display the modal
     modal.style.display = "block"
     // how to close the modal
     modal.querySelector(".close").addEventListener("click", ()=>{
